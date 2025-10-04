@@ -1,0 +1,7 @@
+1. Pandas 
+2. Numpy
+3. matplotlib
+4. Seaborn
+5. Sklearn 
+6. Streamlit 
+7. Pickle 
