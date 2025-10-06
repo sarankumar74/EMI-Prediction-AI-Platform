@@ -1,13 +1,6 @@
-Classification Algorithms
-
-1. Decission Tree Clasifier 
-2. Ramdom Forest Clasifier
-3. Logistic Regression
-4. Support Vector Machine (SVM)
-
-Regression Algorithms
-
-1. Linear Regression 
-2. Decision Tree Regression
-3. Random Forest Regression
-4. Support Vector Regression (SVR) 
+1. Python
+2. Numpy 
+3. Pandas
+4. seaborn
+5. streamlit 
+6. pickle
