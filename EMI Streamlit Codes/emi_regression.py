@@ -32,7 +32,7 @@ st.set_page_config(
 )
 
 st.markdown("<h1 style='text-align: center; color: #4B0082;'> 📆 EMI Amount Prediction</h1>", unsafe_allow_html=True)
-st.write("Fill in the details below to predict **EMI Eligibility**:")
+st.write("Fill in the details below to predict **EMI Amount**:")
 
 
 user_input = {}
@@ -51,7 +51,7 @@ input_df = pd.DataFrame([user_input])
 if st.button("🕒 Predict EMI Amounts"):
     try:
         prediction = model.predict(input_df)[0]
-        st.success(f"✔️ Predicted Classification: **{prediction:.2f}**")
+        st.success(f"✔️ EMI Predicted Amount: **{prediction:.2f}**")
     except Exception as e:
         st.error(f"❌ Prediction Error: {e}")
 else:

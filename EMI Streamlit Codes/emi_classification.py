@@ -51,7 +51,7 @@ input_df = pd.DataFrame([user_input])
 if st.button("📈 Predict EMI Eligibility"):
     try:
         prediction = model.predict(input_df)[0]
-        st.success(f"✨ Predicted Classification: **{prediction}**")
+        st.success(f"✨ Predicted Eligibility: **{prediction}**")
     except Exception as e:
         st.error(f"❌ Prediction Error: {e}")
 else:

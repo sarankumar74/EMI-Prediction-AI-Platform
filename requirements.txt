@@ -1,7 +1,13 @@
-1. Pandas 
-2. Numpy
-3. matplotlib
-4. Seaborn
-5. Sklearn 
-6. Streamlit 
-7. Pickle 
+Classification Algorithms
+
+1. Decission Tree Clasifier 
+2. Ramdom Forest Clasifier
+3. Logistic Regression
+4. Support Vector Machine (SVM)
+
+Regression Algorithms
+
+1. Linear Regression 
+2. Decision Tree Regression
+3. Random Forest Regression
+4. Support Vector Regression (SVR) 
