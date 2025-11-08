@@ -122,7 +122,7 @@ The project delivers:
 
 
 #### Classification Results Page  
-![Result Page](https://github.com/user-attachments/assets/dbbc8d12-3a80-4192-99e7-eed395d1c9de>)
+![Result Page](https://github.com/user-attachments/assets/dbbc8d12-3a80-4192-99e7-eed395d1c9de)
 
 
 ####  Regression Results Page  
