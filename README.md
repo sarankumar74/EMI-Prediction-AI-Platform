@@ -115,28 +115,44 @@ The project delivers:
 
 ---
 
+<summary>📸 Click to view Streamlit UI screenshots</summary>
+
+#### Home Page  
+![Home Page](https://github.com/user-attachments/assets/9bc4f0df-8a89-4dde-9a5e-25894fd66880)
+
+
+#### Classification Results Page  
+![Result Page](https://github.com/user-attachments/assets/dbbc8d12-3a80-4192-99e7-eed395d1c9de>)
+
+
+####  Regression Results Page  
+![Dashboard](https://github.com/user-attachments/assets/95637404-3667-4181-9006-94d7fb224db5)
+
+
+
+---
+
 ## 🧩 Project Structure
 ```bash
+
 EMIPredict_AI/
 │
-├── data/
-│   ├── EMI_dataset.csv           # Main dataset (400K records)
-│   ├── processed/                # Cleaned and feature-engineered data
-│   └── reports/                  # EDA and business insights
+├── EMI Clean & EDA /
+│   ├── emi_clean.ipynb          
+│   ├── emi_eda.ipynb/                
 │
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_eda_visualization.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_model_training.ipynb
+├── EMI Datasets/
+│   ├── EMI Prediction Clean.csv
+│   ├── emi_prediction.csv
+│ 
+├── EMI Streamlit Codes/
+│   ├── emi_classification.py          
+│   └── emi_regression.py
 │
-├── models/
-│   ├── classification/           # Trained classifiers
-│   └── regression/               # Trained regressors
+├── EMI Training Codes/
+│   ├── emi_classification.ipynb
+│   ├── emi_regression.ipynb          
 │
-├── app/
-│   ├── streamlit_app.py          # Streamlit web application
-│
-├── requirements.txt              # Python dependencies
-├── MLproject                     # MLflow configuration file
-└── README.md                     # Project documentation
+├── app.py
+├── requirements.txt              
+└── README.md                    
