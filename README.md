@@ -142,6 +142,8 @@ This system provides **data-driven EMI evaluation** to improve:
 ---
 
 ## 📁 Project Structure
+```bash
+
 EMIPredict_AI/  
 │  
 ├── EMI Clean & EDA /  
