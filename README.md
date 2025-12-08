@@ -1,5 +1,7 @@
-# 💰 EMIPredict AI - Intelligent Financial Risk Assessment Platform
+# 💰 EMIPredict AI — Intelligent Financial Risk Assessment Platform
+🔍 Machine Learning • MLflow • Streamlit • Classification • Regression • FinTech
 
+## 🚀 Tech Stack & Domain
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit)
 ![MLflow](https://img.shields.io/badge/Tool-MLflow-lightblue?logo=mlflow)
@@ -10,110 +12,117 @@
 ---
 
 ## 📘 Overview
-**EMIPredict AI** is an **intelligent financial risk assessment platform** that leverages **machine learning, data analytics, and MLflow tracking** to predict **EMI eligibility and maximum payable EMI amount**.  
-The platform combines **classification and regression models**, advanced **feature engineering**, and **real-time web deployment** via **Streamlit Cloud** to empower financial institutions and individuals with smarter, data-driven loan decisions.
+**EMIPredict AI** is a financial risk assessment platform that predicts:
+1️⃣ **Whether a customer is eligible for EMI (Loan Classification)**  
+2️⃣ **Maximum safe EMI amount the customer can pay (Loan Regression)**  
+
+The platform uses:
+- Dual ML architecture (classification + regression)
+- Real-time prediction via Streamlit Cloud
+- MLflow for experiment tracking, version control & model registry
+- 400,000+ financial records for highly accurate risk scoring
 
 ---
 
 ## 🎯 Problem Statement
-Develop a **comprehensive financial risk assessment system** that predicts both **EMI eligibility** and **maximum safe EMI amount** using machine learning and experiment tracking via MLflow.
+Loan defaults often result from poor EMI budgeting and inaccurate risk approval.  
+This system provides **data-driven EMI evaluation** to improve:
 
-People often struggle with EMI payments due to poor financial planning and inadequate risk evaluation.  
-This platform provides **data-driven insights** for better loan approvals, risk control, and affordability analysis.
-
-The project delivers:
-- 🤖 Dual ML problem-solving: **Classification (eligibility)** & **Regression (amount prediction)**
-- 📊 Real-time financial analysis using **400,000 financial records**
-- ⚙️ Advanced **feature engineering** across 22 demographic and financial variables
-- 🧪 Full **MLflow experiment tracking** and model versioning
-- ☁️ **Streamlit Cloud deployment** for real-time prediction and analytics
-- 🧩 Full **CRUD operations** for data management
+- Customer affordability prediction  
+- Loan approval accuracy  
+- Financial risk control across institutions  
 
 ---
 
 ## 💼 Business Use Cases
 
-### 🏦 Financial Institutions
-- Automate loan approval and reduce manual underwriting by **80%**
-- Implement **risk-based pricing** for different EMI scenarios  
-- Enable **instant eligibility assessment** for in-branch or online customers  
-
-### 💻 FinTech Companies
-- Provide **real-time EMI eligibility checks** for digital lending apps  
-- Integrate **pre-qualification models** in fintech platforms  
-- Deliver **automated risk scoring** for instant loan applications  
-
-### 🏛️ Banks & Credit Agencies
-- Recommend **loan amounts based on capacity** and risk tolerance  
-- Manage **portfolio risk** and predict defaults  
-- Maintain **regulatory compliance** via traceable MLflow decision logs  
-
-### 👨‍💼 Loan Officers & Underwriters
-- Use AI-based recommendations for quick loan decisions  
-- Access detailed financial profiles within seconds  
-- Monitor model accuracy and decision transparency  
+| Stakeholder | Value |
+|------------|-------|
+| 🏦 Banks | Reduced underwriting workload, improved approval decisions |
+| 💻 FinTech Apps | Instant EMI pre-qualification and eligibility scoring |
+| 🏛️ Credit Agencies | Data-driven risk prediction & portfolio protection |
+| 👨‍💼 Loan Officers | Faster loan suggestions and transparent decision metrics |
 
 ---
 
-## 🧠 Skills Takeaway
-- **Python** – Data preprocessing and machine learning model building  
-- **MLflow** – Model tracking, experiment comparison, and version control  
-- **Streamlit Cloud** – Interactive web deployment and real-time prediction  
-- **Classification Models** – Logistic Regression, Random Forest, XGBoost  
-- **Regression Models** – Linear, Random Forest, XGBoost  
-- **Feature Engineering** – Derived ratios, encodings, scaling, and transformations  
-- **Data Analysis** – Exploratory visualization, correlation studies, and validation  
-- **FinTech Domain Knowledge** – Financial planning and credit risk assessment  
+## 🧠 Skills Demonstrated
+- End-to-end ML lifecycle
+- MLflow experiment tracking & deployment
+- Streamlit Cloud CI/CD deployment
+- Classification + Regression hybrid architecture
+- Feature engineering for financial analytics
+- CRUD operations for financial datasets
 
 ---
 
-## 🗺️ Key Development Steps
+## 🧮 Model Evaluation — Classification
 
-### 🧾 Step 1: Data Loading & Preprocessing
-- Loaded **400K financial records** across 5 EMI scenarios  
-- Cleaned missing values, inconsistencies, and duplicates  
-- Applied **validation checks and stratified splits** for model development  
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|----------|-----------|--------|---------|
+| 🌲 RandomForestClassifier | **0.9538** | 0.92 / 0.87 / 0.96 | 0.96 / 0.06 / 1.00 | 0.94 / 0.12 / 0.98 |
+| 🌳 DecisionTreeClassifier | **0.9754** | 0.96 / 0.71 / 0.99 | 0.96 / 0.72 / 0.99 | 0.96 / 0.71 / 0.99 |
+| ⚡ XGBClassifier | **🚀 0.9897 (Best)** | 0.98 / 0.90 / 1.00 | 0.99 / 0.85 / 1.00 | 0.98 / 0.87 / 1.00 |
 
-### 📊 Step 2: Exploratory Data Analysis
-- Analyzed **eligibility patterns and correlations**  
-- Studied **demographic trends and spending behaviors**  
-- Generated **statistical reports and business insights**  
-
-### 🧮 Step 3: Feature Engineering
-- Built financial ratios: **Debt-to-Income**, **Affordability Index**, etc.  
-- Encoded categorical variables and scaled numerical data  
-- Developed **risk scoring metrics** based on credit and employment stability  
-
-### 🤖 Step 4: Machine Learning Model Development
-#### Classification Models
-- Logistic Regression (baseline interpretability)  
-- Random Forest Classifier (feature importance)  
-- XGBoost Classifier (boosted performance)  
-> Evaluated using Accuracy, F1-score, and ROC-AUC  
-
-#### Regression Models
-- Linear Regression (baseline model)  
-- Random Forest Regressor (ensemble method)  
-- XGBoost Regressor (gradient boosting)  
-> Evaluated using RMSE, MAE, R², and MAPE  
-
-### 🧪 Step 5: MLflow Integration
-- Tracked all model experiments with **MLflow Tracking Server**  
-- Logged metrics, hyperparameters, and artifacts  
-- Implemented **Model Registry** for best model deployment  
-
-### 🖥️ Step 6: Streamlit Application Development
-- Built **multi-page Streamlit web app**  
-- Integrated real-time classification and regression predictions  
-- Added **data visualization and MLflow dashboards**  
-- Included **admin CRUD interface** for data management  
-
-### ☁️ Step 7: Cloud Deployment
-- Deployed application on **Streamlit Cloud**  
-- Configured **CI/CD from GitHub** for continuous updates  
-- Ensured cross-platform accessibility and responsive UI  
+### 🔥 Best Classification Model
+✔ **XGBClassifier — 98.97% accuracy**  
+✔ Best macro & weighted averages  
+✔ Highest stability across all 3 target labels
 
 ---
+
+## 📈 Model Evaluation — Regression
+
+| Model | R² Score | MSE | MAE |
+|-------|---------|-----|-----|
+| ➖ Linear Regression | **1.0** | 6.36e-21 | 6.29e-11 |
+| 🌲 RandomForestRegressor | **0.9999999986 (Best)** | 0.0430 | 0.0354 |
+| 🌳 DecisionTreeRegressor | **0.9999999966** | 0.1080 | 0.0331 |
+
+### 🔥 Best Regression Model
+✔ **RandomForestRegressor — Most stable with near-perfect accuracy**  
+✔ Lowest error on financial EMI prediction
+
+---
+
+## 🗺️ Project Workflow
+
+### 1️⃣ Data Loading & Cleaning
+- 400K+ financial records across 5 EMI scenarios
+- Validated inconsistencies & missing values
+- Stratified sampling for balanced ML training
+
+### 2️⃣ Exploratory Data Analysis
+- Demographic & behavioral spending insights
+- Eligibility distribution analysis
+- Correlation studies & anomaly detection
+
+### 3️⃣ Feature Engineering
+- Financial ratios (Debt-to-Income, Affordability Index)
+- Categorical encodings + numerical scaling
+- Risk scoring layer based on employment & credit patterns
+
+### 4️⃣ Machine Learning
+- Classification → Logistic, RF, XGBoost
+- Regression → Linear, RF, XGBoost
+- Hyperparameter tuning with cross-validation
+
+### 5️⃣ MLflow Integration
+- Metrics, params & artifacts logged for every run
+- Model registry for versioned deployment
+- Experiment comparisons for production model decision
+
+### 6️⃣ Streamlit Web App
+- Multi-page financial decision UI
+- Real-time probability scoring + EMI calculator
+- Visualization dashboards and MLflow insights
+
+### 7️⃣ Cloud Deployment
+- Streamlit Cloud hosting
+- GitHub CI/CD auto-redeployment on update
+- Accessible & responsive for desktop & mobile
+
+---
+
 
 <summary>📸 Click to view Streamlit UI screenshots</summary>
 
@@ -132,27 +141,41 @@ The project delivers:
 
 ---
 
-## 🧩 Project Structure
-```bash
+## 📁 Project Structure
+EMIPredict_AI/  
+│  
+├── EMI Clean & EDA /  
+│   ├── emi_clean.ipynb  
+│   └── emi_eda.ipynb  
+│  
+├── EMI Datasets/  
+│   ├── EMI Prediction Clean.csv  
+│   └── emi_prediction.csv  
+│  
+├── EMI Streamlit Codes/  
+│   ├── emi_classification.py  
+│   └── emi_regression.py  
+│  
+├── EMI Training Codes/  
+│   ├── emi_classification.ipynb  
+│   └── emi_regression.ipynb  
+│  
+├── app.py  
+├── requirements.txt  
+└── README.md  
 
-EMIPredict_AI/
-│
-├── EMI Clean & EDA /
-│   ├── emi_clean.ipynb          
-│   ├── emi_eda.ipynb/                
-│
-├── EMI Datasets/
-│   ├── EMI Prediction Clean.csv
-│   ├── emi_prediction.csv
-│ 
-├── EMI Streamlit Codes/
-│   ├── emi_classification.py          
-│   └── emi_regression.py
-│
-├── EMI Training Codes/
-│   ├── emi_classification.ipynb
-│   ├── emi_regression.ipynb          
-│
-├── app.py
-├── requirements.txt              
-└── README.md                    
+---
+
+## 🛠️ Run Locally
+
+Install dependencies
+```
+pip install -r requirements.txt
+```
+
+Run Streamlit app
+```
+streamlit run app.py
+```
+
+---
